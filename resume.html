@@ -1,0 +1,451 @@
+<style type="text/css">
+	body{
+		margin:0;
+		padding:0;
+	}
+	*{
+		box-sizing: border-box;
+	}
+	div.a4-200dpi{
+		margin:0px auto;
+		width:1654px;
+		height: 2339px;
+		overflow: hidden;
+	}
+	div.left-section{
+		padding: 30px 50px;
+		width:1654px;
+		height:2339px;
+	}
+	div.right-section{
+		padding: 50px 20px;
+		height:2339px;
+	}
+	div.inline{
+		display:inline-block;
+		vertical-align: top;
+	}
+	div.experiences{
+		width:1204px;
+		background: #FFF;
+	}
+	div.about-me{
+		width: 450px;
+		background: #3d5d84;
+	}
+
+	h1{
+		margin: 20px 0px 15px 0px;
+		padding: 15px 10px;
+		font-family: 'Open Sans', sans-serif;
+		font-size: 30px;
+		border-bottom: 1px solid black;
+		font-weight: 700;
+		color: #3d5d84;
+		letter-spacing: 10px;
+	}
+	h2{
+		margin:0;
+		font-family: 'Merriweather', serif;
+		font-size:16px;
+		font-weight: 400;
+	}
+	p{
+		margin:0;
+		display: block;
+	}
+
+	h2.position{
+		font-family: 'Merriweather', serif;
+		font-size: 28px;
+		font-weight: 600;
+		margin: 10px 0px;
+	}
+	h2.activity-title{
+		font-family: 'Merriweather', serif;
+		font-size: 22px;
+		font-weight: 600;
+		margin: 8px 0px;
+	}
+	h2.company{
+		font-family: 'Merriweather', serif;
+		font-weight: 400;
+		font-size: 22px;
+		margin: 10px 0px;
+	}
+	h2.activity-description{
+		font-family: 'Merriweather', serif;
+		font-weight: 400;
+		font-size: 18px;
+		margin: 8px 0px;
+	}
+	h2.technical-skill-header{
+		font-family: 'Merriweather', serif;
+		font-size: 24px;
+		font-weight: 600;
+		margin: 0px;
+	}
+	h3{
+		margin: 20px 0px 10px 0px;
+		padding: 15px 10px;
+		font-family: 'Open Sans', sans-serif;
+		font-size: 21px;
+		border-bottom: 1px solid #dac37140;
+		font-weight: 600;
+		color: #dac371;
+		letter-spacing: 6px;
+	}
+	h4{
+		margin: 19px 0px 0px 0px;
+		padding: 0;
+		font-family: 'Open Sans', sans-serif;
+		font-size: 23px;
+		font-weight: 400;
+		color: #bbc9da;
+		letter-spacing: 4px;
+	}
+	p.position-details{
+		text-align: justify;
+		font-family: 'Merriweather', serif;
+		display: block;
+		font-weight: 400;
+		font-size: 19px;
+		font-weight: 300;
+		line-height: 170%;
+		margin: 20px 0px;
+	}
+	p.activity-role{
+		text-align: justify;
+		font-family: 'Merriweather', serif;
+		display: block;
+		font-weight: 400;
+		font-size: 17px;
+		font-weight: 300;
+		margin: 8px 0px;
+	}
+	p.name-surname {
+		margin: 0;
+		font-size: 40px;
+		display: block;
+		color: #FFF;
+		font-weight: 600;
+		text-align: center;
+		margin: 0px 0px 25px 0px;
+		font-family: 'Merriweather', serif;
+		font-family: 'Open Sans', sans-serif;
+	}
+	p.technical-skills{
+		font-family: 'Merriweather', serif;
+		display: block;
+		font-weight: 400;
+		font-size: 24px;
+		font-weight: 300;
+		line-height: 170%;
+		margin: 0px;
+	}
+	img.my-photo {
+		width: 280px;
+		background: #dac371;
+		border: 6px solid #dac371;
+		border-radius: 100%;
+		margin: 0px auto;
+		display: block;
+		z-index: 99;
+		padding: 0px;
+		position: relative;
+	}
+
+	p.time{
+		font-family: 'Open Sans', serif;
+		font-size: 16px;
+		color: #5d5d5d;
+		display: block;
+		margin: 10px 0px;
+		font-weight: 400;
+	}
+	div.experience{
+		padding: 10px;
+	}
+	div.activity{
+		padding: 4px 10px;
+	}
+	div.my-photo-container{
+		position: relative;
+	}
+	div.my-photo-container::after{
+		position: absolute;
+		width: 450px;
+		height: 146px;
+		background: #dac371;
+		margin: -146px -20px 0px -20px;
+		z-index: 1;
+		content: "";
+	}
+	div.information-section{
+		padding: 10px 30px;
+	}
+	p.personel-section{
+		line-height: 170%;
+		padding: 0;
+		font-family: 'Open Sans', sans-serif;
+		font-size: 23px;
+		font-weight: 400;
+		color: #FFF;
+		letter-spacing: 1px;
+	}
+	p.personel-section > a {
+		color: #FFF;
+		text-decoration: none;
+	}
+	td {
+    	padding: 15px 10px;
+	}
+</style>
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+		<title>Resume</title>
+	</head>
+	<body>
+		<div class="a4-200dpi">
+			<div class="inline left-section experiences">
+				<h1>WORK EXPERIENCES</h1>
+				<div class="experience">
+					<div>
+						<h2 class="position">Fullstack Developer</h2>
+						<h2 class="company">Corlu KODER, Tekirdag Namik Kemal University</h2>
+						<p class="time">Mart 2020 - March 2021</p>
+						<p class="position-details">In the project developed to ensure the traceability of odor complaints arising from emissions carried out in accordance with the cooperation protocol signed between Çorlu Municipality and Tekirdağ Namık Kemal University Çorlu Engineering Faculty;</p><p class="position-details">I worked on server administration, database management, frontend and backend development. API writing that produces outputs in json format in order to communicate with the backend and the mobile app.</p>
+					</div>
+				</div>
+				<div class="experience">
+					<div>
+						<h2 class="position">Long Term Intern</h2>
+						<h2 class="company">Kodcu.com</h2>
+						<p class="time">August 2018 - March 2019</p>
+						<p class="position-details">To facilitate invoice and ticket management in Java Day Istanbul 2018 event, invoice and ticket issuance pages are created, the necessary data is taken from the MySQL database in the single page application logic with jQuery AJAX, and the tickets are forwarded to the ticket owners via mail server.</p>
+					</div>
+				</div>
+				<h1>TECHNICAL SKILLS</h1>
+				<table>
+					<tr>
+						<td><h2 class="technical-skill-header">Backend Skills</h2></td><td><p class="technical-skills">PHP, Java(Spring Boot), Node.js, JSON APIs</p></td>
+					</tr>
+					<tr>
+						<td><h2 class="technical-skill-header">Frontend Skills</h2></td><td><p class="technical-skills">jQuery, Ajax, Vanilla Javascript, HTML5, CSS3</p></td>
+					</tr>
+					<tr>
+						<td><h2 class="technical-skill-header">System Management Skills</h2></td><td><p class="technical-skills">Bash Scripting</p></td>
+					</tr>
+					<tr>
+						<td><h2 class="technical-skill-header">Database Management Skills</h2></td><td><p class="technical-skills">SQL, MySQL</p></td>
+					</tr>
+					<tr>
+						<td><h2 class="technical-skill-header">Others</h2></td><td><p class="technical-skills">Git, Python, MVC, OOP, Secure Application Development</p></td>
+					</tr>
+				</table>
+				<h1>ORGANIZATIONS</h1>
+				<div class="experience">
+					<div>
+						<h2 class="position">Student Representative Coordination Team Member</h2>
+						<h2 class="company">IEEE Turkey Student Branches Computer Society</h2>
+						<p class="time">May 2019 - June 2021</p>
+						<p class="position-details">Organizing traditionally held annual events such as CS Camp, CSCON as IEEE Turkey SB Computer Society. Ongoing webinar, ensuring the continuity of the panel series. Ensuring the coordination of school branches.</p>
+					</div>
+				</div>
+				<div class="experience">
+					<div>
+						<h2 class="position">Vice Chairman of the Executive Board</h2>
+						<h2 class="company">IEEE TNKU Student Branch, Tekirdağ Namık Kemal Üniversitesi</h2>
+						<p class="time">August 2020 - June 2021</p>
+						<p class="position-details">Taking executive decisions within the IEEE TNKU Student Branch during the year, supervising the activities of the administrative board.</p>
+					</div>
+				</div>
+				<div class="experience">
+					<div>
+						<h2 class="position">Chairman</h2>
+						<h2 class="company">IEEE TNKU Computer Society, Tekirdağ Namık Kemal Üniversitesi</h2>
+						<p class="time">May 2019 - August 2020</p>
+						<p class="position-details">To represent the Computer Society committee of the IEEE TNKU Student Branch student community in the best way, I assumed the chairmanship of the committee during the 2019-2020 academic year.</p>
+					</div>
+				</div>
+				<div class="experience">
+					<div>
+						<h2 class="position">Webmaster</h2>
+						<h2 class="company">IEEE TNKU Student Branch, Tekirdağ Namık Kemal Üniversitesi</h2>
+						<p class="time">May 2019 - August 2020</p>
+						<p class="position-details">Database management for activities such as creating pages that promote the event, registration forms at events organized within the IEEE TNKU Student Branch.</p>
+					</div>
+				</div>
+			</div><div class="inline right-section about-me">
+				<p class="name-surname">Hasan Özer</p>
+				<div class="my-photo-container"><img src="http://173.82.58.139/profile.png" class="my-photo" alt="my-photo"></div>
+				<h3 style="width: 423px;">PERSONAL INFORMATIONS</h3>
+				<div class="information-section">
+					<h4>Name</h4>
+					<p class="personel-section">Hasan Özer</p>
+					<h4>Languages</h4>
+					<p class="personel-section">Turkish, Native Language</p>
+					<p class="personel-section">English, Intermediate</p>
+				</div>
+				<h3>CONTACT INFORMATIONS</h3>
+				<div class="information-section">
+					<h4>E-Mail</h4>
+					<p class="personel-section"><a href="mailto:mail@syntaxbender.com">mail@syntaxbender.com</a><br><a href="mailto:hasanozer@ieee.org">hasanozer@ieee.org</a></p>
+					<h4>Mobile</h4>
+					<p class="personel-section">(+90) 543 520 4072</p>
+					<h4>Github</h4>
+					<p class="personel-section"><a href="https://github.com/syntaxbender">@syntaxbender</a></p>
+					<h4>LinkedIn</h4>
+					<p class="personel-section"><a href="https://www.linkedin.com/in/syntaxbender/">@syntaxbender</a></p>
+					<h4>Website</h4>
+					<p class="personel-section"><a href="http://syntaxbender.com/">syntaxbender.com</a></p>
+					<h4>Location</h4>
+					<p class="personel-section">Corlu/Tekirdag</p>
+				</div>
+			</div>
+		</div>
+		<div class="a4-200dpi">
+			<div class="inline left-section experiences">
+				<h1>EDUCATION</h1>
+				<div class="experience">
+					<div>                                                                                                                                                           
+						<h2 class="position">Computer Engineering</h2>
+						<h2 class="company">Tekirdag Namik Kemal University, Corlu Engineering Faculty</h2>
+						<p class="time">June 2016 - Present</p>
+						<p class="position-details">5th grade, Grade Point Average: 2.5</p>
+					</div>
+				</div>
+				<h1>ACTIVITIES</h1>
+				<div class="activity">
+					<div>
+						<h2 class="activity-title">Siber Yıldız 2020 - CTF</h2>
+						<h2 class="activity-description">4pent Team, 1650 Score</h2>
+						<p class="activity-role">Attendee</p>
+
+					</div>
+				</div>
+				<div class="activity">
+					<div>
+						<h2 class="activity-title">IEEEXtreme 13.0</h2>
+						<h2 class="activity-description">Rank 1861 / 4103 (Score: 70.67)</h2>
+						<p class="activity-role">Attendee</p>
+					</div>
+				</div>
+				<div class="activity">
+					<div>
+						<h2 class="activity-title">IEEE TNKU SB Computer Society</h2>
+						<h2 class="activity-description">PHP Workshop(Durign 4 Weeks)</h2>
+						<p class="activity-role">Trainer</p>
+					</div>
+				</div>
+				<div class="activity">
+					<div>
+						<h2 class="activity-title">IEEE TNKU SB Computer Society</h2>
+						<h2 class="activity-description">Python Workshop(During 3 Weeks)</h2>
+						<p class="activity-role">Trainer</p>
+					</div>
+				</div>
+				<div class="activity">
+					<div>
+						<h2 class="activity-title">IEEE Turkey SB Computer Society</h2>
+						<h2 class="activity-description">CS Camp (1500+ Registers, 700+ Attendees)</h2>
+						<p class="activity-role">Organization Team</p>
+					</div>
+				</div>
+				<div class="activity">
+					<div>
+						<h2 class="activity-title">IEEE Turkey SB Computer Society</h2>
+						<h2 class="activity-description">CSCON'21 (1800+ Registers, 800+ Attendees)</h2>
+						<p class="activity-role">Organization Team</p>
+
+					</div>
+				</div>
+				<div class="activity">
+					<div>
+						<h2 class="activity-title">JUG Istanbul</h2>
+						<h2 class="activity-description">Javaday Istanbul 2019</h2>
+						<p class="activity-role">Staff</p>
+					</div>
+				</div>
+				<div class="activity">
+					<div>
+						<h2 class="activity-title">BÜSİBER</h2>
+						<h2 class="activity-description">Siber Kış Kampı 2020 - Defansif Grubu</h2>
+						<p class="activity-role">Attendee</p>
+					</div>
+				</div>
+				<div class="activity">
+					<div>
+						<h2 class="activity-title">Siber Kulüpler Birliği</h2>
+						<h2 class="activity-description">Ağ ve Bulut Sistemleri Güvenliği - Ali Işıklı</h2>
+						<p class="activity-role">Attendee</p>
+					</div>
+				</div>
+				<div class="activity">
+					<div>
+						<h2 class="activity-title">Mustafa Akgül Özgür Yazılım Yaz Kampı (During 2 weeks)</h2>
+						<h2 class="activity-description">Python / Django ile Web Programlama - Umut Karcı</h2>
+						<p class="activity-role">Attendee</p>
+					</div>
+				</div>
+				<div class="activity">
+					<div>
+						<h2 class="activity-title">Linux Yaz Kampı 2017 (During 2 weeks)</h2>
+						<h2 class="activity-description">Web Uygulama Güvenliği ve Güvenli Kod Geliştirme - Ömer Çıtak</h2>
+						<p class="activity-role">Attendee</p>
+					</div>
+				</div>
+				<div class="activity">
+					<div>
+						<h2 class="activity-title">IEEEXtreme 13.0 Türkiye Kampı</h2>
+						<h2 class="activity-description">Python Grubu</h2>
+						<p class="activity-role">Attendee</p>
+					</div>
+				</div>
+				<div class="activity">
+					<div>
+						<h2 class="activity-title">Akademik Bilişim 2018</h2>
+						<h2 class="activity-description">GNU Sistem Yönetimi 0.5</h2>
+						<p class="activity-role">Attendee</p>
+					</div>
+				</div>
+				<div class="activity">
+					<div>
+						<h2 class="activity-title">Hacktrick ‘18</h2>
+						<p class="activity-role">Attendee</p>
+
+					</div>
+				</div>
+				<div class="activity">
+					<div>
+						<h2 class="activity-title">ICTConf ‘17- ’18</h2>
+						<p class="activity-role">Attendee</p>
+					</div>
+				</div>
+				<div class="activity">
+					<div>
+						<h2 class="activity-title">Siber Yıldız ‘17- ’19</h2>
+						<p class="activity-role">Attendee</p>
+					</div>
+				</div>
+				<div class="activity">
+					<div>
+						<h2 class="activity-title">Özgür Web Günleri 2017</h2>
+						<p class="activity-role">Attendee</p>
+					</div>
+				</div>
+				<div class="activity">
+					<div>
+						<h2 class="activity-title">BİLMÖK 2018</h2>
+						<p class="activity-role">Attendee</p>
+					</div>
+				</div>
+			</div><div class="inline right-section about-me">
+
+			</div>
+		</div>
+	</body>
+</html>
