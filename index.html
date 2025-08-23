@@ -1,0 +1,478 @@
+<style type="text/css">
+	body {
+		color: #000;
+		margin: 0;
+		padding: 0;
+	}
+
+	* {
+		box-sizing: border-box;
+	}
+
+	div.a4-200dpi {
+		margin: 0px auto;
+		width: 1654px;
+		height: 2339px;
+		overflow: hidden;
+	}
+
+	div.left-section {
+		padding: 30px 50px;
+		width: 1654px;
+		height: 2339px;
+	}
+
+	div.right-section {
+		padding: 50px 20px;
+		height: 2339px;
+	}
+
+	div.inline {
+		display: inline-block;
+		vertical-align: top;
+	}
+
+	div.experiences {
+		width: 1204px;
+		background: #FFF;
+	}
+
+	div.about-me {
+		width: 450px;
+		background: #3d5d84;
+	}
+
+	h1 {
+		margin: 20px 0px 15px 0px;
+		padding: 15px 10px;
+		font-family: 'Open Sans', sans-serif;
+		font-size: 28px;
+		border-bottom: 1px solid #cdd6e1;
+		font-weight: 700;
+		color: #3d5d84;
+		letter-spacing: 10px;
+	}
+
+	h2 {
+		margin: 0;
+		font-family: 'Merriweather', serif;
+		font-size: 16px;
+		font-weight: 400;
+	}
+
+	p {
+		color: #000;
+		margin: 0;
+		display: block;
+	}
+
+	h2.position {
+		font-family: 'Merriweather', serif;
+		font-size: 23px;
+		font-weight: 600;
+		margin: 8px 0px;
+	}
+
+	h2.activity-title {
+		font-family: 'Merriweather', serif;
+		font-size: 22px;
+		font-weight: 600;
+		margin: 8px 0px;
+	}
+
+	h2.company {
+		font-family: 'Merriweather', serif;
+		font-weight: 400;
+		font-size: 19px;
+		margin: 10px 0px;
+	}
+
+	h2.activity-description {
+		font-family: 'Merriweather', serif;
+		font-weight: 400;
+		font-size: 18px;
+		margin: 8px 0px;
+	}
+
+	h2.technical-skill-header {
+		font-family: 'Merriweather', serif;
+		font-size: 19px;
+		font-weight: 600;
+		margin: 0px;
+	}
+
+	h3 {
+		margin: 20px 0px 10px 0px;
+		padding: 15px 10px;
+		font-family: 'Open Sans', sans-serif;
+		font-size: 21px;
+		border-bottom: 1px solid #dac37140;
+		font-weight: 600;
+		color: #dac371;
+		letter-spacing: 6px;
+	}
+
+	h4 {
+		margin: 19px 0px 0px 0px;
+		padding: 0;
+		font-family: 'Open Sans', sans-serif;
+		font-size: 23px;
+		font-weight: 400;
+		color: #bbc9da;
+		letter-spacing: 4px;
+	}
+
+	p.position-details {
+		text-align: justify;
+		font-family: 'Merriweather', serif;
+		display: block;
+		font-weight: 400;
+		font-size: 16px;
+		font-weight: 300;
+		line-height: 170%;
+		margin: 13px 0px;
+	}
+
+	p.activity-role {
+		text-align: justify;
+		font-family: 'Merriweather', serif;
+		display: block;
+		font-weight: 400;
+		font-size: 17px;
+		font-weight: 300;
+		margin: 8px 0px;
+	}
+
+	p.name-surname {
+		margin: 0;
+		font-size: 40px;
+		display: block;
+		color: #FFF;
+		font-weight: 600;
+		text-align: center;
+		margin: 0px 0px 25px 0px;
+		font-family: 'Merriweather', serif;
+		font-family: 'Open Sans', sans-serif;
+	}
+
+	p.technical-skills {
+		font-family: 'Merriweather', serif;
+		display: block;
+		font-weight: 400;
+		font-size: 19px;
+		font-weight: 300;
+		line-height: 170%;
+		margin: 0px;
+	}
+
+	img.my-photo {
+		width: 280px;
+		background: #dac371;
+		border: 6px solid #dac371;
+		border-radius: 100%;
+		margin: 0px auto;
+		display: block;
+		z-index: 99;
+		padding: 0px;
+		position: relative;
+	}
+
+	p.time {
+		font-family: 'Open Sans', serif;
+		font-size: 14px;
+		color: #5d5d5d;
+		display: block;
+		margin: 10px 0px;
+		font-weight: 400;
+	}
+
+	div.experience {
+		padding: 6px 10px;
+	}
+
+	div.activity {
+		padding: 4px 10px;
+	}
+
+	div.my-photo-container {
+		position: relative;
+	}
+
+	div.my-photo-container::after {
+		position: absolute;
+		width: 450px;
+		height: 146px;
+		background: #dac371;
+		margin: -146px -20px 0px -20px;
+		z-index: 1;
+		content: "";
+	}
+
+	div.information-section {
+		padding: 10px 30px;
+	}
+
+	p.personel-section {
+		line-height: 170%;
+		padding: 0;
+		font-family: 'Open Sans', sans-serif;
+		font-size: 23px;
+		font-weight: 400;
+		color: #FFF;
+		letter-spacing: 1px;
+	}
+
+	p.personel-section>a {
+		color: #FFF;
+		text-decoration: none;
+	}
+
+	td {
+		padding: 10px 10px;
+	}
+
+	a {
+		color: #000;
+		text-decoration: none;
+	}
+</style>
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
+		rel="stylesheet">
+	<title>Özgeçmiş</title>
+</head>
+
+<body>
+	<div class="a4-200dpi">
+		<div class="inline left-section experiences">
+			<h1>TEKNİK YETENEKLER</h1>
+			<table>
+				<tr>
+					<td>
+						<h2 class="technical-skill-header">Backend</h2>
+					</td>
+					<td>
+						<p class="technical-skills">PHP, Java, Python, Spring Framework,
+							CommonJS, VanillaJS, Node.js(Typescript, ES), REST APIs, GraphQL, Apollo Server, Redis, Kafka, RabbitMQ
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<h2 class="technical-skill-header">Frontend</h2>
+					</td>
+					<td>
+						<p class="technical-skills">Vite, ReactJS, Redux, NextJS, Bootstrap, Responsive Design,
+							jQuery, Ajax, HTML5, CSS3, SCSS, SASS</p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<h2 class="technical-skill-header">Infrastructure</h2>
+					</td>
+					<td>
+						<p class="technical-skills">Docker, Bash Scripting, Linux System Management(Debian türevleri),
+							Azure DevOps CD/CI pipelines, AWS Lamba Functions, AWS EC2, DigitalOcean Droplets</p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<h2 class="technical-skill-header">Database Management</h2>
+					</td>
+					<td>
+						<p class="technical-skills">MySQL, PostgreSQL</p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<h2 class="technical-skill-header">Diğer</h2>
+					</td>
+					<td>
+						<p class="technical-skills">Git, Python, MVC, OOP, Design Patterns, Event Driven Architecture,
+							Secure Application Development</p>
+					</td>
+				</tr>
+			</table>
+			<h1>İŞ DENEYİMLERİ</h1>
+			<div class="experience">
+				<div>
+					<h2 class="position">Freelance Fullstack Developer</h2>
+					<h2 class="company">Syntaxbender — Kendi İşim</h2>
+					<p class="time">Eylül 2023 - Halen</p>
+					<p class="position-details">Opencart tabanlı e-ticaret çözümleri, wordpress tabanlı tanıtım ve katalog
+						ihtiyaçlarına yönelik çözümler, ReactJS/NextJS tabanlı özel yazılım geliştirme hizmetleri, React Native
+						mobil uygulama hizmetleri<br><br>
+						Portföy: <a href="https://projects.syntaxbender.com">projects.syntaxbender.com</a>
+					</p>
+				</div>
+			</div>
+			<div class="experience">
+				<div>
+					<h2 class="position">Uzun Dönem Stajyer</h2>
+					<h2 class="company">Turknet — Uzaktan</h2>
+					<p class="time">Mart 2023 - Eylül 2023</p>
+					<p class="position-details">Türkiye'nin en büyük internet sağlayıcılarından birisi olan Turknet'te uzun dönem
+						stajım esnasında backend tarafında rol aldım. Backendde Typescript yazarken Redis, Apollo Server, GraphQL,
+						RabbitMQ, Kafka gibi güncel teknolojilerle çalışma fırsatı buldum. Ayrıca Event driven architecture,
+						connection pooling, circuit breaker pattern, singleton pattern, factory pattern gibi benim için yeni olan
+						birçok kavramlarla karşılaştım ve stajım boyunca bu kavramları deneyimledim.</p>
+				</div>
+			</div>
+			<div class="experience">
+				<div>
+					<h2 class="position">Cybersecurity Software Engineer</h2>
+					<h2 class="company">Deepensive — Uzaktan</h2>
+					<p class="time">Temmuz 2022 - Ekim 2022</p>
+					<p class="position-details">Hayalim olan siber güvenlik alanında deneyim kazanmak üzere startup şirketi olan
+						Deepensive'de, şirketin kendi ürünü olan, herhangi bir şirketin herkese açık olarak yayın yaptığı
+						noktalardan OSINT yöntemiyle çeşitli veriler toplayarak izlediği güvenlik politikalarını analiz etmek ve
+						puanlamak üzere "güvenlik itibari puanlama aracı" uygulamasının geliştiriminden sorumluydum. Araştırma ve
+						yazılım geliştirme süreçlerinde rol aldım. AWS Lambda gibi çeşitli teknolojilerle tanışma fırsatım oldu.</p>
+				</div>
+			</div>
+			<div class="experience">
+				<div>
+					<h2 class="position">Software Developer</h2>
+					<h2 class="company">Vireo Software — Uzaktan</h2>
+					<p class="time">Aralık 2021 - Temmuz 2022</p>
+					<p class="position-details">Staj sonrasında Infrastructure tarafında da kendimi geliştirmek üzere Azure DevOps
+						CI/CD pipeline ile çalışma fırsatım oldu. Ayrıca şirketin Ubuntu tabanlı test ve development ortamlarının
+						kurulumu ve bakımlarıyla ilgilendim.</p>
+				</div>
+			</div>
+			<div class="experience">
+				<div>
+					<h2 class="position">Uzun Dönem Stajyer</h2>
+					<h2 class="company">Vireo Software — Uzaktan</h2>
+					<p class="time">Mayıs 2021 - Kasım 2021</p>
+					<p class="position-details">Bir startup şirketi olan Vireo Yazılım'da veritabanı tasarımı, veri yapıları gibi
+						konularda haftalık case'ler halinde ilerledik. İlerleyen süreçlerde ise .NET Core 5 ile web tarafında devam
+						ettim.</p>
+				</div>
+			</div>
+			<div class="experience">
+				<div>
+					<h2 class="position">Freelance Fullstack Developer</h2>
+					<h2 class="company">Çorlu Koder & Çerkezköy Burun — Tekirdağ Namık Kemal Üniversitesi</h2>
+					<p class="time">Mart 2020 - Temmuz 2022</p>
+					<p class="position-details">Çorlu Belediyesi ile Tekirdağ Namık Kemal Üniversitesi arasında imzalanan
+						işbirliği protokolü gereği yürütülen emisyon kaynaklı koku şikâyetlerinin izlenebilirliğinin sağlanması
+						amacıyla geliştirilen projede fullstack developer olarak rol aldım. Web tarafında front controller
+						mantığında bir yapıyla Pure PHP, çeşitli ihtiyaçları karşılamak üzere utils/helpers sınıfları ve önyüzde ise
+						Vanillajs yazdım. Ayrıca veritabanı tarafında MySQL geospatial functions kullanarak mobil app'ten alınan
+						EPSG4623 koordinat düzlemi formatındaki GPS verisi koordinatına göre coğrafi bölge, il ve ilçe tespiti yapan
+						reverse geocoding projesini de geliştirme fırsatı yakaladım. Infrastructure tarafında ise Apache ve PHP-FPM
+						kullandım, günlük yedekleme yapan bir bash script ile de yedeklemeyi sağladım.
+					</p>
+				</div>
+			</div>
+			<div class="experience">
+				<div>
+					<h2 class="position">Uzun Dönem Stajyer</h2>
+					<h2 class="company">Kodcu.com — Uzaktan</h2>
+					<p class="time">Ağustos 2018 - Mart 2019</p>
+					<p class="position-details">
+						Kodcu.com'un ana sponsorluğunda ve organizatörlüğünde gerçekleşen Javaday Istanbul etkinliği için,
+						biletlerin yönetimini kolaylaştırmak amacıyla WordPress üzerine bir katman yazılım mantığında Pure PHP
+						yazarak geliştirdiğim, katılımcıların biletlerinin ve bilet düzenleme linklerinin AWS SES servisiyle e-posta
+						olarak gönderildiği ve iletilen link aracılığıyla katılımcıların bilet bilgilerini düzenlemelerine olanak
+						tanıyan "katılımcı bileti düzenleme paneli" web uygulaması, production ortamında yıllardır kullanılmaktadır.
+					</p>
+				</div>
+			</div>
+		</div><div class="inline right-section about-me">
+			<div class="my-photo-container"><img src="./assets/img/profile.jpg" class="my-photo" alt="my-photo"></div>
+			<h3 style="width: 423px;">KİŞİSEL BİLGİLER</h3>
+			<div class="information-section">
+				<h4>İsim</h4>
+				<p class="personel-section">Hasan Özer</p>
+				<h4>Dil Yetkinlikleri</h4>
+				<p class="personel-section">Türkçe, Ana dil</p>
+				<p class="personel-section">İngilizce, Orta Seviye</p>
+				<h4>Portföy</h4>
+				<p class="personel-section"><a href="https://projects.syntaxbender.com">projects.syntaxbender.com</a></p>
+			</div>
+			<h3>İletişim Bilgileri</h3>
+			<div class="information-section">
+				<h4>E-Posta</h4>
+				<p class="personel-section"><a href="mailto:me@hasanozer.me">me@hasanozer.me</a></p>
+				<h4>Telefon</h4>
+				<p class="personel-section"><a href="tel:+905435204072">(+90) 543 520 4072</a></p>
+				<h4>Github</h4>
+				<p class="personel-section"><a href="https://github.com/syntaxbender">@syntaxbender</a></p>
+				<h4>LinkedIn</h4>
+				<p class="personel-section"><a href="https://www.linkedin.com/in/syntaxbender/">@syntaxbender</a></p>
+				<h4>Website</h4>
+				<p class="personel-section"><a href="https://syntaxbender.com/">syntaxbender.com</a></p>
+				<h4>Lokasyon</h4>
+				<p class="personel-section">Efeler / Aydın</p>
+			</div>
+		</div>
+	</div>
+	<div class="a4-200dpi">
+		<div class="inline left-section experiences">
+			<h1>EĞİTİM</h1>
+			<div class="experience">
+				<div>
+					<h2 class="position">Bilgisayar Mühendisliği</h2>
+					<h2 class="company">Tekirdağ Namık Kemal Üniversitesi, Çorlu Mühendislik Fakültesi</h2>
+					<p class="time">Haziran 2016 - Eylül 2024</p>
+					<p class="position-details">Not Ortalaması: 3.03</p>
+				</div>
+			</div>
+			<h1>ORGANİZASYONLAR</h1>
+			<div class="experience">
+				<div>
+					<h2 class="position">Öğrenci Temsilcisi Koordinasyon Ekibi Üyesi</h2>
+					<h2 class="company">IEEE Türkiye Öğrenci Kolları Computer Society Topluluğu</h2>
+					<p class="time">Eylül 2020 - Haziran 2021</p>
+					<p class="position-details">IEEE Türkiye Öğrenci Kolları Computer Society Topluluğunda ekip üyesi olarak bir
+						dönem rol aldım. Türkiye genelinde tüm öğrenci topluluklarının katılım sağladığı, geleneksel olarak her yıl
+						düzenlenen CSCamp, CSCON gibi etkinliklerin planlamasında rol aldım. Ayrıca üniversitelerin öğrenci
+						kollarının koordinasyonu ve planlamalarında rol aldım.</p>
+				</div>
+			</div>
+			<div class="experience">
+				<div>
+					<h2 class="position">Yönetim Kurulu Başkan Yardımcısı</h2>
+					<h2 class="company">IEEE TNKÜ Öğrenci Topluluğu, Tekirdağ Namık Kemal Üniversitesi</h2>
+					<p class="time">Ağustos 2020 - Haziran 2021</p>
+					<p class="position-details">Verimli geçen bir komite başkanlığı döneminden sonra yönetim kurulunda başkan
+						yardımcısı olarak topluluğa katkı sağladım. Bu dönem boyunca IEEE TNKU bünyesindeki alt
+						toplulukların(komitelerin) birbirleri arasındaki etkileşimini, paydaşlıklarını ve yıl içerisinde yapılacak
+						olan topluluk etkinliklerinin planlamalarını yaptık.</p>
+				</div>
+			</div>
+			<div class="experience">
+				<div>
+					<h2 class="position">Topluluk Temsilcisi</h2>
+					<h2 class="company">IEEE TNKÜ Computer Society Öğrenci Topluluğu, Tekirdağ Namık Kemal Üniversitesi</h2>
+					<p class="time">Mayıs 2019 - Ağustos 2020</p>
+					<p class="position-details">IEEE TNKU Computer Society komitesini en iyi şekilde temsil etmek üzere 2019-2020
+						akademik yılında komiteyi aktif hale getirerek temsilciğini üstlendim. Yeni bir topluluk olduğumuz üzere
+						alanında yetkin bir topluluk olabilmek amacıyla workshop ağırlıklı olarak ilerledik, çeşitli salon
+						etkinlikleri ile de yılı tamamladık.</p>
+				</div>
+			</div>
+			<div class="experience">
+				<div>
+					<h2 class="position">Webmaster</h2>
+					<h2 class="company">IEEE TNKÜ Öğrenci Topluluğu, Tekirdağ Namık Kemal Üniversitesi</h2>
+					<p class="time">Mayıs 2018 - Ağustos 2020</p>
+					<p class="position-details">IEEE TNKU Öğrenci Kolu bünyesinde düzenlenen etkinlikler için gerekli tanıtım
+						sayfaları, kayıt formları gibi ihtiyaçlarda PHP, MySQL, VanillaJS ve CSS ile çözümler geliştirdim.</p>
+				</div>
+			</div>
+		</div><div class="inline right-section about-me">
+
+		</div>
+	</div>
+</body>
+
+</html>
